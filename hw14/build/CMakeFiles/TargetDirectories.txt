@@ -1,3 +1,0 @@
-/home/larrydong/codeGit/fast-lio2-course-homework/hw14/build/CMakeFiles/kalmanfilter.dir
-/home/larrydong/codeGit/fast-lio2-course-homework/hw14/build/CMakeFiles/edit_cache.dir
-/home/larrydong/codeGit/fast-lio2-course-homework/hw14/build/CMakeFiles/rebuild_cache.dir
