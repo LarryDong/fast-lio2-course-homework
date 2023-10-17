@@ -14,11 +14,11 @@
     
 
     //~ TODO: homework 13, change to next IMU's position (and previous IMU's speed)
-    R_imu<<MAT_FROM_ARRAY(tail->rot);   //拿到前一帧的IMU旋转矩阵
-    vel_imu<<VEC_FROM_ARRAY(tail->vel);     //拿到前一帧的IMU速度
-    pos_imu<<VEC_FROM_ARRAY(tail->pos);     //拿到前一帧的IMU位置
+    R_imu<<MAT_FROM_ARRAY(tail->rot);
+    vel_imu<<VEC_FROM_ARRAY(tail->vel); 
+    pos_imu<<VEC_FROM_ARRAY(tail->pos);
 
-    acc_imu<<VEC_FROM_ARRAY(head->acc);     //拿到后一帧的IMU加速度
-    angvel_avr<<VEC_FROM_ARRAY(head->gyr);  //拿到后一帧的IMU角速度
+    acc_imu<<VEC_FROM_ARRAY(head->acc);  
+    angvel_avr<<VEC_FROM_ARRAY(head->gyr); 
     //~ TODO: end.
 
