@@ -13,8 +13,8 @@ int main( int argc, char** argv )
     double dt = 0.5;
     // 状态量x
     Eigen::Vector2d x = Eigen::Vector2d::Zero();
-
-    Eigen::Matrix2d A << 1, dt, 0, 1; //写入A矩阵
+    Eigen::Matrix2d A;
+    A << 1, dt, 0, 1; //写入A矩阵
     
     double u[3] = {3, 2, 1};    //输入：加速度
     vector<Eigen::Vector2d> z(3);    // 观测
@@ -41,7 +41,6 @@ int main( int argc, char** argv )
 
         x = x_updated;
         P = P_updated;
-
         std::cout << "state x: " << x.transpose() << endl;
         std::cout << "covariance P: " << P << endl;
     }
